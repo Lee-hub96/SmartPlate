@@ -1,0 +1,22 @@
+<svg width="400" height="300" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Fridge Body -->
+  <rect x="120" y="50" width="160" height="220" rx="10" fill="#ECF0F1" stroke="#BDC3C7" stroke-width="4"/>
+  <line x1="120" y1="160" x2="280" y2="160" stroke="#BDC3C7" stroke-width="2"/>
+  
+  <!-- Open Door -->
+  <rect x="280" y="50" width="80" height="220" rx="2" fill="#FFFFFF" stroke="#BDC3C7" stroke-width="2"/>
+  <rect x="290" y="80" width="60" height="10" rx="2" fill="#ECF0F1"/>
+  <rect x="290" y="120" width="60" height="10" rx="2" fill="#ECF0F1"/>
+  
+  <!-- Shelves (Inside) -->
+  <line x1="130" y1="100" x2="270" y2="100" stroke="#BDC3C7" stroke-width="1" stroke-dasharray="4 4"/>
+  <line x1="130" y1="130" x2="270" y2="130" stroke="#BDC3C7" stroke-width="1" stroke-dasharray="4 4"/>
+  
+  <!-- Tumbleweed/Dust Mite (Symbolic) -->
+  <circle cx="200" cy="220" r="15" fill="none" stroke="#BDC3C7" stroke-width="1" stroke-dasharray="2 2">
+    <animateTransform attributeName="transform" type="rotate" from="0 200 220" to="360 200 220" dur="5s" repeatCount="indefinite" />
+  </circle>
+  
+  <!-- Text hint -->
+  <text x="200" y="290" text-anchor="middle" font-family="Inter, sans-serif" font-size="16" fill="#7F8C8D">Time to scan your pantry!</text>
+</svg>

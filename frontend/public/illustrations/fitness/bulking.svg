@@ -1,0 +1,11 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Dumbbell -->
+  <rect x="40" y="90" width="120" height="20" rx="4" fill="#2C3E50"/>
+  <rect x="30" y="60" width="30" height="80" rx="6" fill="#7F8C8D"/>
+  <rect x="20" y="70" width="20" height="60" rx="4" fill="#BDC3C7"/>
+  <rect x="140" y="60" width="30" height="80" rx="6" fill="#7F8C8D"/>
+  <rect x="160" y="70" width="20" height="60" rx="4" fill="#BDC3C7"/>
+  
+  <!-- Muscle/Power Line -->
+  <path d="M100 60C120 40 150 40 170 60" stroke="#F39C12" stroke-width="4" stroke-linecap="round"/>
+</svg>

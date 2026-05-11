@@ -1,0 +1,19 @@
+<svg width="400" height="300" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cart Body -->
+  <path d="M120 100H280L260 200H140L120 100Z" fill="none" stroke="#BDC3C7" stroke-width="4"/>
+  <path d="M140 100L150 200M180 100L185 200M220 100L215 200M260 100L250 200" stroke="#BDC3C7" stroke-width="2"/>
+  <path d="M125 130H275M132 165H267" stroke="#BDC3C7" stroke-width="2"/>
+  
+  <!-- Handle -->
+  <path d="M120 100L100 80H80" stroke="#BDC3C7" stroke-width="6" stroke-linecap="round"/>
+  
+  <!-- Wheels -->
+  <circle cx="150" cy="220" r="10" fill="#2C3E50"/>
+  <circle cx="250" cy="220" r="10" fill="#2C3E50"/>
+  
+  <!-- Ground -->
+  <rect x="50" y="240" width="300" height="2" fill="#ECF0F1"/>
+  
+  <!-- "Empty" Text hint -->
+  <text x="200" y="270" text-anchor="middle" font-family="Inter, sans-serif" font-size="16" fill="#7F8C8D">Your list is looking a bit lonely...</text>
+</svg>
