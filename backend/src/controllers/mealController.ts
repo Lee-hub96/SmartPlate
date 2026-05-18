@@ -67,6 +67,12 @@ export const generateMealPlan = async (req: Request, res: Response) => {
     const goal = fitnessGoal || 'weight_loss';
     const suggestions = mealDatabase[goal] || mealDatabase['weight_loss'];
 
+    // Auto-create user if not exists (needed for FK constraint)
+    await query(`
+      INSERT OR IGNORE INTO users (id, email, name, fitness_goal, budget_level, preferences, weekly_budget)
+      VALUES ('${userId}', '${userId}@example.com', '${userId}', '${goal}', 'medium', '[]', 100)
+    `);
+
     // Clear existing meal plan for the user
     await query(`DELETE FROM meals WHERE user_id = '${userId}'`);
 

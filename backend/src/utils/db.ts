@@ -5,9 +5,9 @@ const execPromise = promisify(exec);
 
 export async function query<T = any>(sql: string): Promise<T[]> {
   try {
-    // Escape single quotes in SQL for bash
-    const escapedSql = sql.replace(/'/g, "'\\''");
-    const command = `team-db "${escapedSql}"`;
+    // In dash, single quotes are literal inside double-quoted strings.
+    // team-db receives the SQL as-is, so no shell escaping needed.
+    const command = `team-db "${sql}"`;
     const { stdout, stderr } = await execPromise(command);
 
     if (stderr && !stdout) {

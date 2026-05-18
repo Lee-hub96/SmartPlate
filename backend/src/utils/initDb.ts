@@ -13,6 +13,7 @@ export async function initDb() {
         fitness_goal TEXT, -- weight_loss, bulking, high_protein, keto, vegan
         budget_level TEXT, -- low, medium, high
         preferences TEXT, -- JSON string of dietary restrictions/preferences
+        weekly_budget REAL DEFAULT 100,
         created_at DATETIME DEFAULT CURRENT_TIMESTAMP
       )
     `);
